@@ -1,7 +1,7 @@
 import TableContent from "./TableContent"
 import TableHeadContent from "./TableHeadContent"
 
-function Table() {
+function Table({ dataTable }) {
   return (
     <>
       <div className="table-section">
@@ -12,7 +12,14 @@ function Table() {
                 </thead>
                 
                 <tbody>
-                  <TableContent />
+                  {Object.values(dataTable).map((item, index) => (
+                   <TableContent 
+                    key={index}
+                    title={item.name}
+                    bpm={item.bpm}
+                    danceability={item.danceability} />
+                  ))}
+                  
                 </tbody>
             </table>
         </div>
