@@ -1,18 +1,29 @@
-import Profile from './components/profil/Profile';
-import Recommender from './components/recommender/Recommender';
+
 import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Recommendation from './components/recommendation/Recommendation';
+import Concept from './components/concept/Concept';
+import Team from './components/about/Team';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Recommender />
+    element: <Home />
   },
   {
-    path: "/profile",
-    element: <Profile />
+    path: "/recommendation",
+    element: <Recommendation />
+  },
+  {
+    path: "/concept",
+    element: <Concept />
+  },
+  {
+    path: "/about",
+    element: <Team />
   }
 ])
 
