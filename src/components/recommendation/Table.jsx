@@ -63,6 +63,7 @@ function Table({ songs }) {
                 <th>BPM</th>
                 <th>Danceability</th>
                 <th>Energy</th>
+                <th>Nilai Eigen</th>
               </tr>
             </thead>
             <tbody id="recommendationsList">
@@ -71,10 +72,11 @@ function Table({ songs }) {
               <td className="border border-gray-400 px-4 py-2">{lagu.name}</td>
               <td className="border border-gray-400 px-4 py-2">{lagu.artist}</td>
               <td className="border border-gray-400 px-4 py-2">{lagu.release}</td>
-              <td className="border border-gray-400 px-4 py-2">{lagu.skor}</td>
-              <td className="border border-gray-400 px-4 py-2">{lagu.bpm}</td>
+              <td className="border border-gray-400 px-4 py-2">{lagu.similarity}</td>
+              <td className="border border-gray-400 px-4 py-2">{lagu.liveness}</td>
               <td className="border border-gray-400 px-4 py-2">{lagu.danceability}</td>
               <td className="border border-gray-400 px-4 py-2">{lagu.energy}</td>
+              <td className="border border-gray-400 px-4 py-2">{lagu.eigen_values}</td>
             </tr>
           ))}
             </tbody>
