@@ -3,8 +3,8 @@ import CardItem from "./CardItem";
 function Cart() {
   const cardFeature = [
     {
-      "title" : "BPM (Beats Per Minute)",
-      "description": "BPM atau biasa dikenal tempo yaitu kecepatan irama dari sebuah lagu. BPM menentukan karakteristik sebuah lagu. Biasanya tempo cepat mencerminkan lagu yang bersemangat dan riang. Begitupun sebaliknya tempo lambat mencerminkan lagu yang khidmat atau sedih."
+      "title" : "Liveness",
+      "description": "Liveness dalam musik adalah kualitas yang menggambarkan keaslian dan kehidupan dari pengalaman mendengarkan musik secara langsung, di mana elemen spontanitas, interaksi antara musisi dan audiens, serta atmosfer unik dari pertunjukan langsung menjadi ciri utamanya."
     },
     {
       "title" : "Danceability",
